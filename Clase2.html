@@ -73,6 +73,58 @@
         <td>Buenos Aires</td>
         </tr>
     </table>
-    <button>Soy un botón</button>
+    <br>
+    <div><button>Soy un botón</button></div>
+    <br>
+    <form action="/registro" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type=
+        "text" id="nombre" name="nombre">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo">
+        <label for=
+        "password">Contraseña:</label>
+        <input type=
+        "password" id=
+        "password" name=
+        "password">
+        <input type=
+        "submit" value="Registrarse">
+    </form>
+    <br>
+    <form action="/enviar-datos" method="post">
+        <div><label for="nombre">Tu nombre:</label>
+            <input type=
+            "text" id="nombre" name="nombre">
+        </div>
+        <div>
+            <label for="consulta">Tipo de consulta:</label>
+            <select id="consulta" name="consulta">
+            <option value="general">Consulta general</option>
+            <option value="pedido">Información de pedido</option>
+            <option value="soporte">Soporte técnico</option>
+            </select>
+        </div>
+        <div>
+        <label for=
+        "newsletter">Suscribirse al boletín:</label>
+        <input type=
+        "checkbox" id=
+        "newsletter" name=
+        "newsletter" checked>
+        </div>
+        <div>
+            <label for="mensaje">Tu mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50">
+            Escribe tu mensaje aquí...
+            </textarea>
+        </div>
+        <div>
+            <input type=
+            "submit" value="Enviar consulta">
+        </div>
+    </form>
+    <br>
+    <span>esto es span</span>
 </body>
 </html>
